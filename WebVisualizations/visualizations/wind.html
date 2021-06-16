@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Landing Page</title>
+
+    <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bring in CSS stylesheet -->
+  <link rel="stylesheet" href="assets/style.css">
+
+  <!-- For dropdown to work, from stack overflow-->
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+  <script src= "https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="../index.html">Lattitude</a>
+        <!-- Button for collapsing nav bar -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Collapsable Nav bar -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <!-- Plot dropdown -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Plots
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- @@@@@ NEED TO ADD HREF FOR LINKS -->
+                <a class="dropdown-item" href="visualizations/temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="visualizations/humidity.html">Humidity</a>
+                <a class="dropdown-item" href="visualizations/cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="visualizations/wind.html">Wind Speed</a>
+              </div>
+            </li>
+            <!-- Nav item for Comparison -->
+            <li class="nav-item active">
+              <a class="nav-link" href="../comparison.html">Comparison<span class="sr-only">(current)</span></a>
+            </li>
+            <!-- Nav item for Data -->
+            <li class="nav-item">
+              <a class="nav-link" href="../data.html">Data</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+
+    <!-- CURRENT PAGE -->
+    <h1>WIND</h1>
+</body>
+</html>
