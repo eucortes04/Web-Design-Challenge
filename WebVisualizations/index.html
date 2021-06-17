@@ -8,7 +8,7 @@
     <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Bring in CSS stylesheet -->
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
 
   <!-- For dropdown to work, from stack overflow-->
   <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
@@ -17,8 +17,8 @@
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Lattitude</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <!-- Button for collapsing nav bar -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
           <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
 
         <!-- Collapsable Nav bar -->
         <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <!-- Plot dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -54,6 +54,58 @@
       </nav>
 
     <!-- CURRENT PAGE -->
+    <!-- Creating  Overall Grid -->
+    <div class="container">
+      <div class="row"></div>
+      <!-- Creating row for Main page grid -->
+      <div class="row">
+      
+        <!-- Creating column 1 for summary/graph -->
+        <div class="col-md-8">
+          <h1 class="tealHeading">Summary: Latitude vs. X</h1>
+          <hr>
+          <img src="assets/Images/temperaturemap.png" alt="">
+          <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To acomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.
+          </p>
+          <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+          </p>
+
+
+        </div>
+
+        <!-- Creating column 2 for the sidebar -->
+        <div class="col-md-4 sidebar">
+         <h2 class="tealHeading">Visualizations</h2><hr>
+         <!-- Row 1 for sidebar grid -->
+         <div class="row">
+           <!-- column for plot 1 -->
+           <div class="col">
+             <!-- plot1 -->
+             <a href="temp.html"><img src="assets/Images/temperaturemap.png" alt=""></a>
+           </div>
+           <!-- column for plot 2 -->
+           <div class="col">
+             <!-- plot 2 -->
+             <a href="humidity.html"><img src="assets/Images/humiditymap.png" alt=""></a>
+           </div>
+         </div>
+         <!-- Row 2 for sidebar grid -->
+         <div class="row">
+           <!-- column for plot 3 -->
+           <div class="col">
+             <!-- plot 3 -->
+             <a href="cloudiness.html"><img src="assets/Images/cloudymap.png" alt=""></a>
+           </div>
+           <!-- column for plot 4 -->
+            <div class="col">
+              <!-- plot 4 -->
+              <a href="wind.html"><img src="assets/Images/windmap.png" alt=""></a>
+            </div>
+         </div>
+        </div>
+      </div>
+    </div>
+
 
 </body>
 </html>

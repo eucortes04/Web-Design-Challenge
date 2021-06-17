@@ -1,0 +1,29 @@
+.navbar-brand{
+    color:white;
+    background-color: teal;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+body{
+    background-color: lightgray;
+}
+.container{
+    background-color: white;
+}
+.navbar{
+    background-color: white;
+}
+.tealHeading{
+    color: teal;
+}
+
+.outlineCurrent{
+    outline-style: solid;
+    outline-color: teal;
+    outline-width: 1px;
+}

@@ -8,7 +8,7 @@
     <!-- Bring in our bootstrap stylesheet -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Bring in CSS stylesheet -->
-  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/CSS/style.css">
 
   <!-- For dropdown to work, from stack overflow-->
   <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
@@ -18,14 +18,14 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">Lattitude</a>
+        <a class="navbar-brand" href="index.html">Latitude</a>
         <!-- Button for collapsing nav bar -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Collapsable Nav bar -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
+          <ul class="navbar-nav ml-auto">
             <!-- Plot dropdown -->
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -53,8 +53,37 @@
       </nav>
 
     <!-- CURRENT PAGE -->
-
-    <h1>COMPARISONS</h1>
+    <!-- Main Grid -->
+    <div class="container">
+      <h1 class="tealHeading">Comparison: Latitude vs X</h1><hr>
+      <p>Click any plot to get an in-depth analysis</p>
+        <!-- Top row of graphs -->
+        <div class="row">
+            <!-- column for plot 1 -->
+            <div class="col-md-6">
+                <h4 class="tealHeading text-center">vs. Max Temperature</h4>
+                <a href="temp.html"><img src="assets/Images/temperaturemap.png" alt=""></a>
+            </div>
+            <!-- column for plot 2 -->
+            <div class="col-md-6">
+                <h4 class="tealHeading text-center">vs. Humidity</h4>
+                <a href="humidity.html"><img src="assets/Images/humiditymap.png" alt=""></a>
+            </div>
+        </div>
+        <!-- Bottom row of graphs -->
+        <div class="row">
+            <!-- column for plot 3 -->
+            <div class="col-md-6">
+                <h4 class="tealHeading text-center">vs. Cloudiness</h4>
+                <a href="cloudiness.html"><img src="assets/Images/cloudymap.png" alt=""></a>
+            </div>
+            <!-- column for plot 4 -->
+            <div class="col-md-6">
+                <h4 class="tealHeading text-center">vs. Wind Speed</h4>
+                <a href="wind.html"><img src="assets/Images/windmap.png" alt=""></a>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
