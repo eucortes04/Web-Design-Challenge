@@ -1,5 +1,4 @@
 # Web-Design-Challenge
-[Main Page](WebVisualizations/index.html)
 
 ## Latitude - Latitude Analysis Dashboard with Attitude
 
